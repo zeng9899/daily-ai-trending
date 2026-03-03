@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "roxybrowser-openapi": {
+      "command": "npx",
+      "args": ["-y", "@roxybrowser/openapi@beta"],
+      "env": {
+        "ROXY_API_KEY": "your_roxy_api_key",
+        "ROXY_API_HOST": "http://127.0.0.1:50000"
+      }
+    },
+    "roxybrowser-playwright-mcp": {
+      "command": "npx",
+      "args": ["-y", "@roxybrowser/playwright-mcp@latest"]
+    }
+  }
+}
