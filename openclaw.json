@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.23",
+    "lastTouchedAt": "2026-03-03T04:10:29.399Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-03T04:10:29.294Z",
+    "lastRunVersion": "2026.2.23",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "qwen-portal:default": {
+        "provider": "qwen-portal",
+        "mode": "oauth"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "zhipu": {
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+        "apiKey": "your_roxy_api_key",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-4.5-air",
+            "name": "GLM-4.5-Air",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "zhipu/glm-4.5-air"
+      },
+      "models": {
+        "qwen-portal/coder-model": { "alias": "qwen" },
+        "qwen-portal/vision-model": {},
+        "zhipu/glm-4": { "alias": "zhipu" },
+        "zhipu/glm-3-turbo": { "alias": "glm3" },
+        "zhipu/cogview-3": { "alias": "cogview" }
+      },
+      "workspace": "C:\\Users\\84352\\.openclaw\\workspace",
+      "compaction": { "mode": "safeguard" },
+      "maxConcurrent": 4,
+      "subagents": { "maxConcurrent": 8 }
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "mcporter": {
+        "enabled": true,
+        "env": {
+          "MCPORTER_CONFIG": "mcporter.json-path"
+        }
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "web": {},
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a*********,
+      "appSecret": "wfpMV**********************",
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "dmPolicy": "pairing",
+      "groupPolicy": "allowlist",
+      "requireMention": true,
+      "mediaMaxMb": 30,
+      "renderMode": "auto"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "******************************"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "calendar.add",
+        "contacts.add",
+        "reminders.add"
+      ]
+    }
+  },
+  "plugins": {
+    "allow": ["feishu", "qwen-portal-auth"],
+    "load": {
+      "paths": ["C:\\Users\\84352"]
+    },
+    "entries": {
+      "qwen-portal-auth": { "enabled": true },
+      "feishu": { "enabled": true }
+    }
+  }
+}
