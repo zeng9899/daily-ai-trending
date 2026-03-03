@@ -1,4 +1,4 @@
-# OpenClaw + MCP 智能助手配置
+# OpenClaw智能助手
 
 ## 📋 项目简介
 
