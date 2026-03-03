@@ -30,8 +30,6 @@
 ```
 ├── .mcporter/                 # MCP配置目录
 │   └── mcporter.json          # MCP服务器配置
-├── config/                    # OpenClaw配置目录
-│   └── mcporter.json          # 项目级MCP配置
 ├── scripts/                   # 脚本文件
 │   ├── monitor-api-usage.js   # API使用监控脚本
 │   └── startup-gateway.ps1    # 网关启动脚本
@@ -107,6 +105,7 @@ mcporter daemon start
 
 ### 3. API密钥配置
 在 RoxyBrowser 控制面板中获取 API 密钥，并配置到 `mcporter.json` 文件中。
+
 
 ## 📖 使用示例
 
