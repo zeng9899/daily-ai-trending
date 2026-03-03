@@ -194,9 +194,6 @@ Start-Process "openclaw" -ArgumentList "gateway start" -Verb RunAs
 - [ ] 插件化扩展机制
 - [ ] 可视化管理界面
 
-## 🤝 贡献指南
-
-欢迎提交Issue和Pull Request来改进这个项目！
 
 ### 开发规范
 - 遵循OpenClaw官方文档
@@ -204,18 +201,7 @@ Start-Process "openclaw" -ArgumentList "gateway start" -Verb RunAs
 - 添加必要的注释和文档
 - 测试新功能后再提交
 
-## 📞 支持与反馈
-
-- **问题反馈**: 通过GitHub Issues
-- **功能建议**: 欢迎提交Enhancement请求
-- **文档改进**: 欢迎完善README和文档
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
-
----
 
 **最后更新**: 2026年3月3日  
-**维护者**: OpenClaw社区  
+**维护者**: zeng9899 
 **版本**: v1.0.0
