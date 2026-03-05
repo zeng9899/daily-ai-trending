@@ -5,23 +5,32 @@ openclaw.json
 # Node.js
 node_modules/
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # 环境变量
 .env
 .env.local
-.env.*.local
 
-# OpenClaw
+# OpenClaw 配置和敏感文件
 .openclaw/
 *.bak
+TOOLS.md
+USER.md
+AGENTS.md
+SOUL.md
+IDENTITY.md
+HEARTBEAT.md
+BOOTSTRAP.md
+memory/
+tasks/
+query/
+
+# 邮件配置
+package.json
+package-lock.json
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # 系统文件
 .DS_Store
@@ -30,7 +39,3 @@ Thumbs.db
 # 日志
 logs/
 *.log
-
-# 临时文件
-tmp/
-temp/
