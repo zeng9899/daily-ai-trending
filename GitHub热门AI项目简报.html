@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub今日热门AI项目简报</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #007acc;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .title {
+            font-size: 28px;
+            color: #007acc;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 20px;
+            color: #007acc;
+            border-left: 4px solid #007acc;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .project-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .project-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .project-stars {
+            background: #ffd700;
+            color: #333;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .project-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            background: #e3f2fd;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .project-desc {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .project-features {
+            background: #fff3e0;
+            padding: 10px;
+            border-radius: 4px;
+            border-left: 3px solid #ff9800;
+        }
+        .trend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .trend-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .trend-title {
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .company-card {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .investment-card {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .high-potential {
+            border-left: 4px solid #dc3545;
+        }
+        .summary {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">GitHub今日热门AI项目简报</h1>
+            <div class="subtitle">
+                <p><strong>日期：</strong>2026年3月3日</p>
+                <p><strong>报告时间：</strong>11:40 GMT+8</p>
+                <p><strong>制作：</strong>Faker AI助手</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📊 今日GitHub热门AI项目TOP10</h2>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">1. RuView - ruvnet/RuView</div>
+                    <div class="project-stars">⭐ 21,538 (+1,412)</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 TypeScript</span>
+                    <span class="meta-item">🏢 ruvnet</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>WiFi DensePose技术，将普通WiFi信号转换为实时人体姿态估计、生命体征监测和存在检测
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>无需任何视频像素即可实现AI感知，隐私保护技术
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">2. Airi - moeru-ai/airi</div>
+                    <div class="project-stars">⭐ 31,724 (+526)</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 TypeScript</span>
+                    <span class="meta-item">🏢 moeru-ai</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>自托管、用户拥有的Grok伴侣，包含二次元灵魂的容器
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>支持实时语音聊天、Minecraft、Factorio游戏，跨平台支持
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">3. Claude Agent平台 - ruvnet/ruflo</div>
+                    <div class="project-stars">⭐ 18,157 (+830)</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 TypeScript</span>
+                    <span class="meta-item">🏢 ruvnet</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>Claude智能体编排平台，部署智能多智能体集群
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>企业级架构、分布式群体智能、RAG集成
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">4. OpenSandbox - alibaba/OpenSandbox</div>
+                    <div class="project-stars">⭐ 4,481 (+1,026)</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 Python</span>
+                    <span class="meta-item">🏢 Alibaba</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>通用AI应用沙盒平台，多语言SDK支持
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>统一沙盒API、Docker/Kubernetes运行时，企业级部署
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">5. MarkItDown - microsoft/markitdown</div>
+                    <div class="project-stars">⭐ 3,593 (+585)</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 Python</span>
+                    <span class="meta-item">🏢 Microsoft</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>文件和Office文档转换为Markdown的工具
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>微软官方出品，支持多种文件格式，企业级文档处理
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">6. Claude科学技能集 - K-Dense-AI/claude-scientific-skills</div>
+                    <div class="project-stars">⭐ 3,220</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 未明确</span>
+                    <span class="meta-item">🏢 K-Dense-AI</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>研究科学工程分析金融写作的Agent技能集
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>即用型AI技能，专业领域应用，垂直行业解决方案
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">7. Prompt工程教程 - anthropics/prompt-eng-interactive-tutorial</div>
+                    <div class="project-stars">⭐ 3,220</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 Jupyter Notebook</span>
+                    <span class="meta-item">🏢 Anthropic</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>Anthropic的交互式提示工程教程
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>官方教程，互动式学习，AI交互优化工具
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">8. AI Agent IDE - superset-sh/superset</div>
+                    <div class="project-stars">⭐ 242</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 TypeScript</span>
+                    <span class="meta-item">🏢 superset-sh</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>AI Agent时代的IDE，运行Claude Code、Codex等
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>在机器上运行AI军队，新型开发工具
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">9. Servo - servo/servo</div>
+                    <div class="project-stars">⭐ 未明确</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 Rust</span>
+                    <span class="meta-item">🏢 Mozilla</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>为开发者提供轻量级、高性能的Web技术嵌入替代方案
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>高性能Web渲染引擎，Mozilla出品
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-name">10. AI代码执行平台 - 相关项目</div>
+                    <div class="project-stars">🔥 新兴</div>
+                </div>
+                <div class="project-meta">
+                    <span class="meta-item">📝 多语言</span>
+                    <span class="meta-item">🏢 活跃开发</span>
+                </div>
+                <div class="project-desc">
+                    <strong>🎯 功能：</strong>AI代码执行和训练环境
+                </div>
+                <div class="project-features">
+                    <strong>🔥 特点：</strong>支持多语言AI代码执行，容器化部署
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📈 趋势分析</h2>
+            <div class="trend-grid">
+                <div class="trend-card">
+                    <div class="trend-title">🔥 热门技术方向</div>
+                    <ul>
+                        <li>WiFi AI感知 - 无摄像头AI监测</li>
+                        <li>AI Agent编排 - 多智能体协同</li>
+                        <li>沙盒环境 - 安全AI应用运行</li>
+                        <li>提示工程 - AI交互优化</li>
+                        <li>跨平台AI - 多操作系统支持</li>
+                    </ul>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-title">🏢 主要参与者</div>
+                    <ul>
+                        <li><strong>大厂主导：</strong>Microsoft、Alibaba、Anthropic</li>
+                        <li><strong>创新团队：</strong>ruvnet、moeru-ai、superset-sh</li>
+                        <li><strong>开源社区：</strong>活跃的AI开源生态</li>
+                    </ul>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-title">📊 星数增长趋势</div>
+                    <ul>
+                        <li><strong>快速增长：</strong>OpenSandbox (+1,026⭐)、RuView (+1,412⭐)</li>
+                        <li><strong>稳定增长：</strong>Claude相关项目持续关注</li>
+                        <li><strong>新兴技术：</strong>WiFi AI感知技术热捧</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💡 技术洞察</h2>
+            <div class="company-grid">
+                <div class="company-card">
+                    <strong>边缘AI计算</strong>
+                    <p>WiFi信号直接转换为AI感知，减少摄像头依赖，隐私保护技术</p>
+                </div>
+                <div class="company-card">
+                    <strong>AI Agent生态</strong>
+                    <p>从单一AI模型向多智能体协同发展，企业级编排平台需求增长</p>
+                </div>
+                <div class="company-card">
+                    <strong>开发工具革新</strong>
+                    <p>AI时代的新型IDE和开发工具，代码生成和执行环境优化</p>
+                </div>
+                <div class="company-card">
+                    <strong>跨平台支持</strong>
+                    <p>Web、桌面、移动端全覆盖，容器化部署成为主流</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🚀 投资建议</h2>
+            
+            <div class="investment-card high-potential">
+                <div class="trend-title">🔥 高潜力项目</div>
+                <ul>
+                    <li><strong>RuView</strong> - 边缘AI感知技术，应用场景广泛</li>
+                    <li><strong>ruflo</strong> - Claude Agent平台，企业级应用潜力大</li>
+                    <li><strong>OpenSandbox</strong> - 阿里巴巴出品，技术实力雄厚</li>
+                </ul>
+            </div>
+
+            <div class="investment-card">
+                <div class="trend-title">🎯 关注方向</div>
+                <ul>
+                    <li>AI Agent编排和协同技术</li>
+                    <li>隐私保护的AI感知技术</li>
+                    <li>企业级AI应用开发平台</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📝 总结</h2>
+            <div class="summary">
+                <p>今日GitHub热门AI项目展现了AI技术的多元化发展趋势，从边缘计算到企业级应用，从开发工具到运行环境，AI生态正在快速成熟。特别是WiFi AI感知技术和AI Agent编排平台受到高度关注，反映了AI技术在隐私保护和协同工作方面的重要进展。</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>本报告基于GitHub公开数据整理，仅供参考 | 制作时间：2026年3月3日 11:40 GMT+8</p>
+        </div>
+    </div>
+</body>
+</html>
