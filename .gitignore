@@ -1,0 +1,36 @@
+# API Keys - 不要提交这些文件到 GitHub！
+mcporter.json
+openclaw.json
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# OpenClaw
+.openclaw/
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+logs/
+*.log
+
+# 临时文件
+tmp/
+temp/
